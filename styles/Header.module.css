@@ -1,10 +1,15 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  .link {
-    margin-right: 15px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+.link {
+  margin-right: 15px;
+  font-size: 30px;
+}
+
+.symbol {
+  color: #5918df;
+}

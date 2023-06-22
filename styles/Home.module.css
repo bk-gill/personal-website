@@ -91,6 +91,7 @@
   height: 65vh;
 }
 
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

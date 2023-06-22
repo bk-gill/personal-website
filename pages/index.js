@@ -23,5 +23,5 @@ export default function Home() {
         <p> </p>
       </footer>
     </div>
-  )
+  );
 }
