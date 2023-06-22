@@ -1,5 +1,3 @@
-// pages/elsewhere.js
-
 import Header from '../components/Header';
 
 function Elsewhere() {

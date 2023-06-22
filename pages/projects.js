@@ -1,5 +1,3 @@
-// pages/projects.js
-
 import Header from '../components/Header';
 
 function Projects() {
