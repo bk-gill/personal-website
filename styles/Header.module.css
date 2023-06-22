@@ -1,0 +1,12 @@
+/* styles/Header.module.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .link {
+    margin-right: 15px;
+  }
+  
