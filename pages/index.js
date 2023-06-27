@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Balkarn Vick Gill</title>
+        <title>Balkarn Gill</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -14,8 +14,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.centeredContent}>
-          <h1>Welcome to my Portfolio</h1>
-          <p>This is a description about myself and my work.</p>
+
+          <div className={styles.signatureAnimation}>
+            <video className={styles.signatureVideo} autoPlay muted playsInline>
+              <source src="signature.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </main>
 
