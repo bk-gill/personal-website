@@ -1,13 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 2rem;
   align-items: center;
 }
 
 .link {
-  margin-right: 15px;
-  font-size: 30px;
+  margin-right: 1.5rem;
+  font-size: 2rem;
 }
 
 .symbol {
