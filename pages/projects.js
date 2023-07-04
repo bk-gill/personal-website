@@ -5,24 +5,24 @@ import Header from '../components/Header';
 function Projects() {
   const projects = [
     {
-      title: 'Plant Disease Detection Pathfinder',
+      title: 'Autonomous Plant Disease Detection Pathfinder',
       imageSrc: ['/pathfinder1.jpg', '/pathfinder2.jpg'],
       description: '- Coordinated a team of interdisciplinary engineers in building an automated pathfinder which was programmed to weave through rows of plants on its own, avoiding obstacles and detecting signs of disease in plants.\n\n- Temperature sensor, humidity sensor, and ultrasonic distance sensor were wired and programmed using Arduino, a hyperspectral camera was also wired into the design and programmed using C via a Raspberry Pi, and important data points were transmitted using a Wi-Fi module.\n\n🏆 Won first place at the F20 bioinstrumentation design competition! 🏆',
     },
     {
       title: 'This Website',
-      imageSrc: ['/square.png'],
-      description: 'Description of project 2\nPortfolio website',
+      imageSrc: ['/website.png'],
+      description: '- Created this website as a way to learn the React framework Next.js.\n\n- Initial designs were created using Sketch, features were implemented using Javascript. \n\n- Integrated with Git version control and deployed the website on Vercel for continuous deployment and easy collaboration.',
     },
     {
-      title: 'Project 3',
-      imageSrc: ['/square.png'],
-      description: 'Description of project 3\nNew project',
+      title: 'French Bulldog CT-Scan Apparatus',
+      imageSrc: ['/bulldog1.png','/bulldog2.png','/bulldog3.png'],
+      description: '- Team chosen out of 60+ applicants to design product for Dr. Alex Zur Linden from the Ontario Veterinary College.\n\n- Purpose of the project was to create an apparatus that reduces visibility obstructions during CT-Scans for Brachycephalic dog breeds.\n\n- Extensive research into material selection as apparatus must be constructed without using any metals (and any other materials that interfere with CT-Scan imaging) while being able to withstand all relevant forces.\n\n- SolidWorks and ANSYS were utilized to create a fully-working model that met all constraints and criteria of the client.',
     },
     {
-      title: 'Project 4',
-      imageSrc: ['/square.png'],
-      description: 'Description of project 4\nAnother new project',
+      title: 'Current Project',
+      imageSrc: ['/p4.png'],
+      description: '- Currently working on an iOS application\n\n- Stay tuned!',
     },
   ];
 

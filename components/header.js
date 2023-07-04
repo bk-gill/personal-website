@@ -17,7 +17,7 @@ function Header() {
           resume <span className={styles.symbol}>/&gt;</span>
         </Link>
         <Link href="/elsewhere" className={styles.link}>
-          elsewhere <span className={styles.symbol}>/&gt;</span>
+          about <span className={styles.symbol}>/&gt;</span>
         </Link>
       </div>
     </header>
