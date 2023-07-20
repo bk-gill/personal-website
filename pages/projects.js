@@ -12,7 +12,7 @@ function Projects() {
     {
       title: 'This Website',
       imageSrc: ['/website.png'],
-      description: '- Created this website as a way to learn the React framework Next.js.\n\n- Initial designs were created using Sketch, features were implemented using Javascript. \n\n- Integrated with Git version control and deployed the website on Vercel for continuous deployment and easy collaboration.',
+      description: '- Created this website as a way to learn the React framework Next.js.\n\n- Initial designs were created using Sketch, features were implemented using Javascript. \n\n- Integrated with Git version control and deployed the website on Vercel for continuous deployment.',
     },
     {
       title: 'French Bulldog CT-Scan Apparatus',
