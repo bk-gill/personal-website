@@ -7,7 +7,7 @@ function Projects() {
     {
       title: 'Autonomous Plant Disease Detection Pathfinder',
       imageSrc: ['/pathfinder1.jpg', '/pathfinder2.jpg'],
-      description: '- Coordinated a team of interdisciplinary engineers in building an automated pathfinder which was programmed to weave through rows of plants on its own, avoiding obstacles and detecting signs of disease in plants.\n\n- Temperature sensor, humidity sensor, and ultrasonic distance sensor were wired and programmed using Arduino, a hyperspectral camera was also wired into the design and programmed using C via a Raspberry Pi, and important data points were transmitted using a Wi-Fi module.\n\n🏆 Won first place at the F20 bioinstrumentation design competition! 🏆',
+      description: '- Coordinated a team of interdisciplinary engineers in building an automated pathfinder which was programmed to weave through rows of plants on its own, avoiding obstacles and detecting signs of disease in plants.\n\n- Temperature sensor, humidity sensor, and ultrasonic distance sensor were wired and programmed using Arduino, a hyperspectral camera was also wired into the design and programmed using C via a Raspberry Pi, and important data points were transmitted using a Wi-Fi module.\n\n🏆 Won first place at the F22 bioinstrumentation design competition! 🏆',
     },
     {
       title: 'This Website',
