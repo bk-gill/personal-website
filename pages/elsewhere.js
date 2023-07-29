@@ -23,7 +23,7 @@ export default function Elsewhere() {
           </p>
 
           <p style={{ marginBottom: '10px', fontSize: '18px' }}>
-            In my free time, I enjoy hiking, trying out new food, playing video games, and watching sports!
+            In my free time, I enjoy hiking, trying new food, playing video games, and watching sports!
           </p>
 
           <img
