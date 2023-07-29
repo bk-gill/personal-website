@@ -22,6 +22,10 @@ export default function Elsewhere() {
             I will be using this website to post new updates regarding projects and myself while I pursue my passion for software!
           </p>
 
+          <p style={{ marginBottom: '10px', fontSize: '18px' }}>
+            In my free time, I enjoy hiking, trying out new food, playing video games, and watching sports!
+          </p>
+
           <img
             src="/IMG_0048.png" 
             alt="Balkarn's Picture"
