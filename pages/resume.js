@@ -15,7 +15,7 @@ export default function Resume() {
       </div>
       <div style={{ width: '80%', margin: '0 10%' }}>
         <iframe
-          src="https://drive.google.com/file/d/1a6vOvyTU5-6550OpQNwJUP16qEWkte4Z/preview"
+          src="https://drive.google.com/file/d/1LQyJQ5eFm2-f_rraO6OWZ3SymV9IgtAu/preview"
           width="100%"
           height="800px"
           style={{ border: '1px solid white' }}
