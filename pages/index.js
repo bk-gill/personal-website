@@ -25,7 +25,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/balkarn-gill-826881240/" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '30px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                   <FaLinkedin color="#0077B5" size={20} />
-                  <span style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={() => window.open('https://www.linkedin.com/in/balkarn-vick-gill-826881240/')}>
+                  <span style={{ marginLeft: '10px', cursor: 'pointer' }}>
                     LinkedIn
                   </span>
                 </div>
