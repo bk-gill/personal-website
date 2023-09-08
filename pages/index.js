@@ -33,7 +33,7 @@ export default function Home() {
               <a href="https://github.com/bk-gill" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '30px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                   <FaGithub size={20} />
-                  <span style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={() => window.open('https://github.com/bk-gill', '_blank')}>
+                  <span style={{ marginLeft: '10px', cursor: 'pointer' }}>
                     GitHub
                   </span>
                 </div>
@@ -41,7 +41,7 @@ export default function Home() {
               <a href="https://twitter.com/bksgill" target="_blank" rel="noopener noreferrer">
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <FaTwitter color="#1DA1F2" size={20} />
-                  <span style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={() => window.open('https://twitter.com/bksgill', '_blank')}>
+                  <span style={{ marginLeft: '10px', cursor: 'pointer' }}>
                     Twitter
                   </span>
                 </div>
