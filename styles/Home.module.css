@@ -22,13 +22,13 @@
   margin: 0 0 1rem;
   line-height: 1.15;
   font-size: 3.6rem;
-  text-align: center; 
+  text-align: center;
 }
 
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
-  text-align: center; 
+  text-align: center;
 }
 
 .grid {
@@ -82,14 +82,25 @@
   height: 65vh;
 }
 
+.signatureAnimation {
+  position: relative;
+  width: 100%; /* Full width */
+  max-width: 600px; /* Maximum width */
+  margin: auto; /* Centering the video */
+}
+
 .signatureVideo {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .signatureAnimation {
+    max-width: 100%; /* Full width on smaller screens */
   }
 }
