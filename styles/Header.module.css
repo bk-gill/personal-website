@@ -14,22 +14,29 @@
   color: #5918df;
 }
 
-/* Responsive design adjustments */
+/* Responsive design adjustments for mobile */
 @media (max-width: 600px) {
   .header {
-    flex-direction: column;
-    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between; /* Align items to opposite ends */
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 
-  /* Specific adjustments for navigation links, if any */
   .link {
-    /* smaller font size, padding, margin adjustments */
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px; /* Smaller font size for mobile */
+    margin-right: 10px; /* Adjust margin */
   }
 
-  /* Hamburger menu styling, if implemented */
+  /* If you want to hide the hamburger menu on larger screens */
   .hamburger-menu {
-    /* styling for hamburger menu icon */
+    display: none;
+  }
+}
+
+/* Add this if implementing a hamburger menu on mobile */
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on mobile */
+    /* additional styling for the hamburger menu */
   }
 }
