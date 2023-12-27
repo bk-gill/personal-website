@@ -1,12 +1,13 @@
-import Link from 'next/link';
-import styles from '../styles/Header.module.css';
+import Link from "next/link";
+import styles from "../styles/Header.module.css";
 
 function Header() {
   return (
     <header className={styles.header}>
       <div>
         <Link href="/" className={styles.link}>
-          <span className={styles.symbol}>&lt;</span> balkarn <span className={styles.symbol}>/&gt;</span>
+          <span className={styles.symbol}>&lt;</span> balkarn{" "}
+          <span className={styles.symbol}>/&gt;</span>
         </Link>
       </div>
       <div>
@@ -21,7 +22,7 @@ function Header() {
         </Link>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header;

@@ -13,3 +13,23 @@
 .symbol {
   color: #5918df;
 }
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  /* Specific adjustments for navigation links, if any */
+  .link {
+    /* smaller font size, padding, margin adjustments */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Hamburger menu styling, if implemented */
+  .hamburger-menu {
+    /* styling for hamburger menu icon */
+  }
+}
