@@ -1,5 +1,8 @@
-import Head from 'next/head';
-import Header from '../components/Header';
+import Head from "next/head";
+import Header from "../components/Header";
+import styles from "../styles/About.module.css"; // Import the new CSS module
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Elsewhere() {
   return (
@@ -10,26 +13,28 @@ export default function Elsewhere() {
 
       <Header />
 
-      <div style={{ textAlign: 'center', marginTop: '80px' }}>
-        <h1 style={{ marginBottom: '30px' }}>about</h1>
+      <div className={styles.aboutContainer}>
+        <h1 className={styles.aboutTitle}>about</h1>
 
-        <div className="textbox" style={{ maxWidth: '600px', margin: '0 auto' }}>
-          {/* Paragraphs containing information about Balkarn */}
-          <p style={{ marginBottom: '10px', fontSize: '18px' }}>
-            Hi, I'm Balkarn! I'm currently a Master's student in Electrical and Computer Engineering with a specialization in Software Engineering.
+        <div className={styles.textbox}>
+          <p className={styles.aboutParagraph}>
+            Hi, I'm Balkarn! I'm currently a Master's student in Electrical and
+            Computer Engineering with a specialization in Software Engineering.
           </p>
-          <p style={{ marginBottom: '10px', fontSize: '18px' }}>
-            I will be using this website to post new updates regarding projects and myself while I pursue my passion for software!
+          <p className={styles.aboutParagraph}>
+            I will be using this website to post new updates regarding projects
+            and myself while I pursue my passion for software!
+          </p>
+          <p className={styles.aboutParagraph}>
+            In my free time, I enjoy hiking, trying new foods, playing video
+            games, and watching sports (let's go Raptors)!
           </p>
 
-          <p style={{ marginBottom: '10px', fontSize: '18px' }}>
-            In my free time, I enjoy hiking, trying new foods, playing video games, and watching sports (let's go Raptors)!
-          </p>
-
-          <img
-            src="/IMG_0048.png" 
+          <LazyLoadImage
+            src="/IMG_0048.png"
             alt="Balkarn's Picture"
-            style={{ maxWidth: '300px', margin: '20px auto' }}
+            className={styles.aboutImage}
+            effect="blur"
           />
         </div>
       </div>

@@ -84,14 +84,28 @@
 
 .signatureAnimation {
   position: relative;
-  width: 100%; /* Full width */
-  max-width: 600px; /* Maximum width */
-  margin: auto; /* Centering the video */
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
 }
 
 .signatureVideo {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
+}
+
+.socialIconsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 600px) {
@@ -101,6 +115,11 @@
   }
 
   .signatureAnimation {
-    max-width: 100%; /* Full width on smaller screens */
+    max-width: 100%;
+  }
+
+  .socialIconsContainer {
+    flex-direction: column;
+    align-items: center;
   }
 }

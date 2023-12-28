@@ -6,7 +6,7 @@ function Header() {
     <header className={styles.header}>
       <div>
         <Link href="/" className={styles.link}>
-          <span className={styles.symbol}>&lt;</span> balkarn{" "}
+          <span className={styles.symbol}>&lt;</span> balkarn gill{" "}
           <span className={styles.symbol}>/&gt;</span>
         </Link>
       </div>

@@ -8,35 +8,36 @@
 .link {
   margin-right: 15px;
   font-size: 30px;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.link:hover {
+  color: #494949; /* Gray color on hover */
 }
 
 .symbol {
   color: #5918df;
 }
 
-/* Responsive design adjustments for mobile */
 @media (max-width: 600px) {
   .header {
     flex-direction: row;
-    justify-content: space-between; /* Align items to opposite ends */
-    padding: 10px; /* Adjust padding for smaller screens */
+    justify-content: space-between;
+    padding: 10px;
   }
 
   .link {
-    font-size: 18px; /* Smaller font size for mobile */
-    margin-right: 10px; /* Adjust margin */
+    font-size: 18px;
+    margin-right: 10px;
   }
 
-  /* If you want to hide the hamburger menu on larger screens */
   .hamburger-menu {
     display: none;
   }
 }
 
-/* Add this if implementing a hamburger menu on mobile */
 @media (max-width: 600px) {
   .hamburger-menu {
-    display: block; /* Show hamburger menu on mobile */
-    /* additional styling for the hamburger menu */
+    display: block;
   }
 }

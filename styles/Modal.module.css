@@ -1,0 +1,101 @@
+.modalTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: black;
+  position: relative;
+}
+
+.modalContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.modalContent ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.modalContent li {
+  margin-bottom: 10px;
+}
+
+.imageContainer {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modalImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: black;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.leftArrow {
+  left: 10px;
+}
+
+.rightArrow {
+  right: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  padding: 0;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: #f44336;
+}
