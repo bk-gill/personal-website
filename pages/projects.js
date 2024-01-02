@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Modal from "../components/Modal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import styles from "../styles/Projects.module.css";
 
 function Projects() {
@@ -70,6 +72,9 @@ function Projects() {
       </Head>
 
       <Header />
+      <div style={{ textAlign: "center", marginTop: "80px" }}>
+        <h1 className={styles.projectPageTitle}>projects</h1>
+      </div>
 
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (
@@ -78,9 +83,10 @@ function Projects() {
             className={styles.projectCard}
             onClick={() => openModal(project)}
           >
-            <img
+            <LazyLoadImage
               src={project.imageSrc[0]}
               alt={project.title}
+              effect="blur"
               className={styles.projectImage}
             />
             <div className={styles.projectContent}>

@@ -5,16 +5,19 @@
 
 .aboutTitle {
   margin-bottom: 30px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .textbox {
   max-width: 600px;
   margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .aboutParagraph {
   margin-bottom: 10px;
   font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .aboutImage {

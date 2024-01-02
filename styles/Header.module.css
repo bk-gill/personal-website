@@ -1,4 +1,4 @@
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   padding: 30px;
@@ -8,11 +8,11 @@
 .link {
   margin-right: 15px;
   font-size: 30px;
-  transition: color 0.3s; /* Smooth transition for color change */
+  transition: color 0.3s;
 }
 
 .link:hover {
-  color: #494949; /* Gray color on hover */
+  color: #494949;
 }
 
 .symbol {
@@ -29,6 +29,78 @@
   .link {
     font-size: 18px;
     margin-right: 10px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+  }
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+.link,
+.title {
+  font-family: "Noto Sans", sans-serif;
+  margin-right: 15px;
+  font-size: 30px;
+  transition: color 0.2s;
+}
+
+.link:hover,
+.title:hover {
+  color: #494949;
+}
+
+.titlesymbol {
+  color: #5918df;
+  font-size: 48px;
+}
+
+.linksymbol {
+  color: #5918df;
+  font-size: 26px;
+}
+
+.title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 48px;
+  text-transform: lowercase;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .link,
+  .title {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 28px;
+    text-transform: lowercase;
+    color: white;
   }
 
   .hamburger-menu {

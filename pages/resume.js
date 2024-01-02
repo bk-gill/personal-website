@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import styles from "../styles/Resume.module.css";
 
 export default function Resume() {
   return (
@@ -11,7 +12,7 @@ export default function Resume() {
       <Header />
 
       <div style={{ textAlign: "center", marginTop: "80px" }}>
-        <h1 style={{ marginBottom: "2rem" }}>resume</h1>
+        <h1 className={styles.resumeTitle}>resume</h1>
       </div>
       <div style={{ width: "80%", margin: "0 10%" }}>
         <iframe

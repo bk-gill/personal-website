@@ -1,0 +1,78 @@
+.container {
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-size: 1em;
+  color: white;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  padding: 1em 0 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 600px;
+  list-style: none;
+}
+
+.timeline:before {
+  background-color: white;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 265px;
+  width: 2px;
+  height: 100%;
+}
+
+.event {
+  position: relative;
+  padding-left: 100px;
+}
+
+.icon {
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: 253.5px;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.body {
+  padding: 7em 2em 0;
+  position: relative;
+  width: auto;
+  left: 200px;
+  top: -125px;
+}
+
+.body h3 {
+  color: #5918df;
+  font-size: 1.2em;
+}
+
+.body h4 {
+  font-size: 1.2em;
+}
+
+.year {
+  position: absolute;
+  top: 2em;
+  left: 10em;
+}
+
+.description {
+  /* add some description styling later */
+}
+
+.description strong {
+  font-weight: 700;
+}
+
+.description p {
+  padding-bottom: 1.2em;
+}

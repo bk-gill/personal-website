@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import styles from "../styles/About.module.css"; // Import the new CSS module
+import { Timeline } from "../components/Timeline";
+import { Event } from "../components/Event";
+import styles from "../styles/About.module.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -38,6 +40,16 @@ export default function Elsewhere() {
           />
         </div>
       </div>
+      <Timeline>
+        <Event year="2023" title="Systems Analyst">
+          <p>Description of what you did in 2019.</p>
+        </Event>
+        <Event year="2020" title="Software Developer">
+          <p>Description of your first internship experience.</p>
+        </Event>
+
+        {/* Add more Event components for other years and titles */}
+      </Timeline>
     </div>
   );
 }

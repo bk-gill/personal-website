@@ -6,19 +6,20 @@ function Header() {
     <header className={styles.header}>
       <div>
         <Link href="/" className={styles.link}>
-          <span className={styles.symbol}>&lt;</span> balkarn gill{" "}
-          <span className={styles.symbol}>/&gt;</span>
+          <span className={styles.titlesymbol}>&lt;</span>
+          <span className={styles.title}> balkarn gill</span>
+          <span className={styles.titlesymbol}>/&gt;</span>
         </Link>
       </div>
       <div>
         <Link href="/projects" className={styles.link}>
-          projects <span className={styles.symbol}>/&gt;</span>
+          projects <span className={styles.linksymbol}>/&gt;</span>
         </Link>
         <Link href="/resume" className={styles.link}>
-          resume <span className={styles.symbol}>/&gt;</span>
+          resume <span className={styles.linksymbol}>/&gt;</span>
         </Link>
         <Link href="/elsewhere" className={styles.link}>
-          about <span className={styles.symbol}>/&gt;</span>
+          about <span className={styles.linksymbol}>/&gt;</span>
         </Link>
       </div>
     </header>
