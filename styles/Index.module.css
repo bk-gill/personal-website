@@ -1,4 +1,4 @@
-.container {
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -38,9 +38,9 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
-}
+} */
 
-.card {
+/* .card {
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
@@ -50,9 +50,9 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-}
+} */
 
-.card:hover,
+/* .card:hover,
 .card:focus,
 .card:active {
   color: #0070f3;
@@ -72,14 +72,14 @@
 
 .logo {
   height: 1em;
-}
+} */
 
 .centeredContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 65vh;
+  height: 72vh;
 }
 
 .signatureAnimation {
@@ -87,12 +87,13 @@
   width: 100%;
   max-width: 600px;
   margin: auto;
-  /* margin-bottom: 150px; */
+  margin-bottom: 50px;
 }
 
 .signatureVideo {
   width: 100%;
   height: auto;
+  margin-bottom: 50px;
 }
 
 .socialIconsContainer {
@@ -100,7 +101,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -100px;
+  margin-top: -80px;
 }
 
 .socialIcon {
@@ -111,7 +112,7 @@
 
 .socialIcon span {
   font-family: "Noto Sans", sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   margin-left: 10px;
 }
 
