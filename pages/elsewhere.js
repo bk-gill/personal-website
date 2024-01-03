@@ -41,14 +41,24 @@ export default function Elsewhere() {
         </div>
       </div>
       <Timeline>
-        <Event year="2023" title="Systems Analyst">
-          <p>Description of what you did in 2019.</p>
+        <Event year="2023" title="Systems Analyst" subtitle="Zedcor">
+          <p>Add a sentence here, okay!</p>
         </Event>
-        <Event year="2020" title="Software Developer">
-          <p>Description of your first internship experience.</p>
+        <Event year="" title="Full Stack Developer" subtitle="Neo Financial">
+          <p>Add a sentence here, okay!</p>
         </Event>
 
-        {/* Add more Event components for other years and titles */}
+        <Event year="2022" title="IT Consultant" subtitle="Carnostic Inc.">
+          <p>Add a sentence here, okay!</p>
+        </Event>
+
+        <Event
+          year="2021"
+          title="Software Development Intern"
+          subtitle="Carnostic Inc."
+        >
+          <p>Add a sentence here, okay!</p>
+        </Event>
       </Timeline>
     </div>
   );
