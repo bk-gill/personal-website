@@ -1,8 +1,14 @@
 .projectsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* This will create a responsive number of columns */
   gap: 20px;
   padding: 20px;
+  /* If the projects container is too wide, you might want to limit its max-width */
+  max-width: 1200px; /* Adjust this value to fit your design */
+  margin: 0 auto; /* Center the container on the page */
 }
 
 .projectCard {
@@ -18,7 +24,7 @@
 }
 
 .projectImage {
-  width: 100%;
+  width: 500px;
   height: 200px;
   object-fit: cover;
 }
@@ -27,19 +33,15 @@
   padding: 15px;
 }
 
-.projectTitle {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 10px;
+.projectPageTitle {
+  margin-top: 80px; /* You have this set in your inline styles, so it should be consistent */
+  margin-bottom: 30px;
+  text-align: center; /* Centering the title */
   font-family: "Noto Sans", sans-serif;
+  font-size: 2rem; /* Set the font size for your title as needed */
 }
 
 .projectDescription {
   font-size: 1rem;
   color: #666;
-}
-
-.projectPageTitle {
-  margin-bottom: 30px;
-  font-family: "Noto Sans", sans-serif;
 }

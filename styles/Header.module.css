@@ -1,8 +1,14 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
   align-items: center;
+  position: fixed; /* Make the header fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other elements */
+  background-color: #000000; /* Set a background color to make it stand out */
 }
 
 .link,
@@ -37,49 +43,36 @@
   color: white;
 }
 
+/* Responsive design adjustments */
 @media (max-width: 800px) {
   .header {
-    flex-direction: row; /* Keep the main axis horizontal */
-    justify-content: space-between; /* Space between title and links */
+    flex-direction: column; /* Change to column for a stacked layout */
     padding: 10px;
-  }
-
-  .header > div:first-child {
-    /* title sep div adds */
   }
 
   .header > div:last-child {
     display: flex;
     flex-direction: column; /* Stack the links vertically */
-    align-items: flex-end; /* Align links to the right side */
-    margin-left: auto; /* Push the links container to the right */
+    align-items: center; /* Center align links */
+    margin-top: 10px; /* Space between title and links */
   }
 
   .link,
   .title {
     font-size: 18px;
-    margin-right: 0; /* Remove the margin on the right of the links */
-    font-family: "Noto Sans", sans-serif;
+    margin-right: 0;
   }
 
   .link:not(:last-child) {
-    margin-bottom: 5px; /* Add space between stacked links */
+    margin-bottom: 5px; /* Space between stacked links */
   }
 
   .title {
     font-size: 28px; /* Adjusted for mobile, if needed */
   }
 
-  .titlesymbol {
-    font-size: 28px;
-  }
-
+  .titlesymbol,
   .linksymbol {
-    /* Adjust symbol sizes if necessary */
-    font-size: 18px;
-  }
-
-  .hamburger-menu {
-    display: none; /* Adjust based on your design */
+    font-size: 28px;
   }
 }

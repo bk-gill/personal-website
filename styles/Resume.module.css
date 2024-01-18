@@ -1,4 +1,36 @@
 .resumeTitle {
+  margin-top: 80px; /* Consistent with the other sections like 'projects' */
   margin-bottom: 30px;
+  text-align: center; /* Ensuring the title is centered */
   font-family: "Noto Sans", sans-serif;
+  font-size: 2rem; /* Match the font size with other section titles if needed */
+  color: #fff; /* Match the color with other section titles if needed */
+}
+
+/* If you have a specific container for the resume section like other sections */
+.resumeContainer {
+  width: 80%; /* Or match the width with other sections */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Match the padding with other sections */
+  max-width: 1200px; /* Adjust this value to match other sections if needed */
+}
+
+/* If you want to style the iframe specifically */
+.resumeIframe {
+  border: none; /* Assuming you don't want a border */
+  width: 100%;
+  height: 800px; /* Adjust the height as needed */
+  margin-bottom: 30px; /* Space below the iframe */
+}
+
+/* You may also want to add media queries to handle responsiveness */
+@media (max-width: 768px) {
+  .resumeContainer {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .resumeIframe {
+    height: 600px; /* Adjust the height for smaller devices */
+  }
 }

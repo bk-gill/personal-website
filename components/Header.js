@@ -1,26 +1,27 @@
-import Link from "next/link";
 import styles from "../styles/Header.module.css";
 
 function Header() {
   return (
     <header className={styles.header}>
       <div>
-        <Link href="/" className={styles.link}>
+        {/* Use plain <a> for in-page navigation, no need for <Link> here */}
+        <a href="#" className={styles.link}>
           <span className={styles.titlesymbol}>&lt;</span>
           <span className={styles.title}>balkarn gill</span>
           <span className={styles.titlesymbol}>/&gt;</span>
-        </Link>
+        </a>
       </div>
       <div>
-        <Link href="/projects" className={styles.link}>
+        {/* Anchor links for in-page navigation */}
+        <a href="#projects" className={styles.link}>
           projects <span className={styles.linksymbol}>/&gt;</span>
-        </Link>
-        <Link href="/resume" className={styles.link}>
+        </a>
+        <a href="#resume" className={styles.link}>
           resume <span className={styles.linksymbol}>/&gt;</span>
-        </Link>
-        <Link href="/elsewhere" className={styles.link}>
+        </a>
+        <a href="#about" className={styles.link}>
           about <span className={styles.linksymbol}>/&gt;</span>
-        </Link>
+        </a>
       </div>
     </header>
   );
