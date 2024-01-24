@@ -46,5 +46,5 @@ button {
 html,
 body {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Height of your fixed header */
+  scroll-padding-top: 140px; /* controls scrolling depth */
 }

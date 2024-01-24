@@ -4,8 +4,10 @@
 }
 
 .aboutTitle {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  margin-top: 90px;
 }
 
 .textbox {
@@ -29,6 +31,13 @@
 @media (max-width: 600px) {
   .aboutContainer {
     text-align: center;
-    margin-top: -50px;
+    margin-top: 20px;
+  }
+
+  .aboutTitle {
+    margin-bottom: 0px;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    margin-top: 0px;
   }
 }

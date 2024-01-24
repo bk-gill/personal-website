@@ -14,9 +14,8 @@ export default function Elsewhere() {
       </Head>
 
       <Header />
-
       <div className={styles.aboutContainer}>
-        <h1 className={styles.aboutTitle}>about</h1>
+        <h1 className={styles.aboutTitle}>abo123ut</h1>
 
         <div className={styles.textbox}>
           <p className={styles.aboutParagraph}>

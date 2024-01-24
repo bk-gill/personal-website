@@ -3,12 +3,12 @@
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  position: fixed; /* Make the header fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure it's above other elements */
-  background-color: #000000; /* Set a background color to make it stand out */
+  z-index: 1000;
+  background-color: #000000;
 }
 
 .link,
@@ -43,36 +43,53 @@
   color: white;
 }
 
-/* Responsive design adjustments */
-@media (max-width: 800px) {
+.titlesymbol,
+.title {
+  margin-right: 8px;
+}
+
+@media (max-width: 600px) {
   .header {
-    flex-direction: column; /* Change to column for a stacked layout */
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
+  }
+
+  .header > div:first-child {
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   .header > div:last-child {
     display: flex;
-    flex-direction: column; /* Stack the links vertically */
-    align-items: center; /* Center align links */
-    margin-top: 10px; /* Space between title and links */
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .link,
   .title {
     font-size: 18px;
-    margin-right: 0;
   }
 
   .link:not(:last-child) {
-    margin-bottom: 5px; /* Space between stacked links */
+    margin-bottom: 10px;
   }
 
   .title {
-    font-size: 28px; /* Adjusted for mobile, if needed */
+    font-size: 28px;
+  }
+
+  .linksymbol {
+    font-size: 18px;
+  }
+
+  .titlesymbol {
+    font-size: 28px;
   }
 
   .titlesymbol,
-  .linksymbol {
-    font-size: 28px;
+  .title {
+    margin-right: 5px;
   }
 }

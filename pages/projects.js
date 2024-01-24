@@ -72,11 +72,12 @@ function Projects() {
       </Head>
 
       <Header />
-      <div style={{ textAlign: "center", marginTop: "80px" }}>
+      {/* <div style={{ textAlign: "center", marginTop: "80px" }}>
         <h1 className={styles.projectPageTitle}>projects</h1>
-      </div>
+      </div> */}
 
       <div className={styles.projectsContainer}>
+        <h1 className={styles.projectPageTitle}>projects</h1>
         {projects.map((project, index) => (
           <div
             key={index}

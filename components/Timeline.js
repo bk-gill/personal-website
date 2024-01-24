@@ -1,4 +1,4 @@
-import styles from "../styles/Timeline.module.css"; // This should be the path to your CSS module for Timeline
+import styles from "../styles/Timeline.module.css";
 
 export const Timeline = ({ children }) => (
   <div className={styles.container}>

@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div>
-        {/* Use plain <a> for in-page navigation, no need for <Link> here */}
+        {/* Title */}
         <a href="#" className={styles.link}>
           <span className={styles.titlesymbol}>&lt;</span>
           <span className={styles.title}>balkarn gill</span>
@@ -12,15 +12,15 @@ function Header() {
         </a>
       </div>
       <div>
-        {/* Anchor links for in-page navigation */}
+        {/* Links */}
+        <a href="#about" className={styles.link}>
+          about <span className={styles.linksymbol}>/&gt;</span>
+        </a>
         <a href="#projects" className={styles.link}>
           projects <span className={styles.linksymbol}>/&gt;</span>
         </a>
         <a href="#resume" className={styles.link}>
           resume <span className={styles.linksymbol}>/&gt;</span>
-        </a>
-        <a href="#about" className={styles.link}>
-          about <span className={styles.linksymbol}>/&gt;</span>
         </a>
       </div>
     </header>

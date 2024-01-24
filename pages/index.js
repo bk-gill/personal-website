@@ -123,9 +123,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="about" className={aboutStyles.aboutContainer}>
+        <div id="about" className={aboutStyles.aboutTitle}>
           <h1 className={aboutStyles.aboutTitle}>about</h1>
-
+        </div>
+        <div className={aboutStyles.aboutContainer}>
           <div className={aboutStyles.textbox}>
             <p className={aboutStyles.aboutParagraph}>
               Hi, I'm Balkarn! I'm currently a Master's student in Electrical
@@ -169,8 +170,10 @@ export default function Home() {
             <p>Add a sentence here, okay!</p>
           </Event>
         </Timeline>
-        <h1 className={projectsStyles.projectPageTitle}>projects</h1>
-        <div id="projects" className={projectsStyles.projectsContainer}>
+        <div id="projects" className={projectsStyles.projectPageTitle}>
+          <h1 className={projectsStyles.projectPageTitle}>projects</h1>
+        </div>
+        <div className={projectsStyles.projectsContainer}>
           {projects.map((project, index) => (
             <div
               key={index}
@@ -194,12 +197,12 @@ export default function Home() {
           <Modal project={currentProject} onClose={closeModal} />
         )}
 
-        <div id="resume" className={resumeStyles.resumeTitleContainer}>
+        <div id="resume" className={resumeStyles.resumeTitle}>
           <h1 className={resumeStyles.resumeTitle}>resume</h1>
         </div>
         <div className={resumeStyles.resumeContainer}>
           <iframe
-            src="https://drive.google.com/file/d/1qf4RJ8-jCXyzl_wMHtBEZaFUN9CNASJi/preview"
+            src="https://drive.google.com/file/d/1NrziSgUxLAT-HEp6hkIrEMgEOnNecFzx/preview"
             className={resumeStyles.resumeIframe}
           />
         </div>
