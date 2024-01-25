@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/Modal.module.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { FaGithub } from "react-icons/fa";
 
 const Modal = ({ project, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -49,6 +50,19 @@ const Modal = ({ project, onClose }) => {
             <li key={index}>{item}</li>
           ))}
         </ul>
+        {project.githubUrl && (
+          <div className={styles.githubLink}>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialIcon}
+            >
+              <FaGithub size={20} />
+              <span>View on GitHub</span>
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

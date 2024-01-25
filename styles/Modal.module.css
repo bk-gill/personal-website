@@ -99,3 +99,22 @@
 .closeButton:focus {
   color: #f44336;
 }
+
+.githubLink {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.githubLink a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black; /* or any color you prefer */
+  font-size: 1rem; /* adjust as needed */
+  text-decoration: underline;
+}
+
+.githubLink svg {
+  margin-right: 10px;
+}

@@ -25,14 +25,54 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Neo Financial's Tech Thursdays Web Application",
-      imageSrc: ["/nfwa1.png"],
+      title: "CircleCVI Database Optimization Project",
+      imageSrc: ["circlecvi.jpeg"],
       description: [
-        "- Worked with a team of software developers to create a web application for Neo Financial's weekly Tech Thursdays events.",
-        "- Utiltized Figma to design the website, React for front-end development, and Drupal for back-end.",
-        "- Ownership was transferred to Neo Financial, who are currently responsible for maintaining the web app.",
+        "- Collaborating closely with Circle CVI's software team and interfacing with the front-end team to ensure cohesive development and integration of backend improvements with user-facing elements, fostering a multidisciplinary approach to enhance the overall functionality and user experience of cardiovascular imaging software.",
+        "- Enhancing the database backend of Circle’s medical imaging software, focusing on improving testing infrastructure and data management efficiency.",
+        "- Developing a suite of Stored Functions in MySQL to cater to the diverse data requirements of various departments within Circle.",
+        "- Creating and implementing Stored Procedures to ensure and maintain database consistency, contributing to the overall reliability of the software.",
+        "- Utilizing Python for scripting and automation tasks, enhancing the functionality and performance of the database management tools.",
       ],
     },
+    {
+      title: "Neo Financial's Tech Thursdays Web Application",
+      imageSrc: ["/nfwa0.png", "/nfwa1.png"],
+      description: [
+        "- Worked with a team of software developers to create a web application for Neo Financial's weekly Tech Thursdays events.",
+        "- Effectively utilized Azure DevOps and Scrum methodology to streamline project management and collaboration, enabling the swift and agile development of the event management website.",
+        "- Utiltized Figma to design the website, React for front-end development, and back-end integration with Drupal, showcasing proactive collaboration with the marketing lead.",
+        "- Leveraged APIs and a headless CMS to facilitate features like newsletter subscriptions and automated email notifications, ensuring seamless communication and user interaction.",
+        "- Ownership was transferred to Neo Financial, who are currently responsible for maintaining the web app.",
+        "- Received a letter of reccomendation for my work.",
+      ],
+    },
+
+    {
+      title: "Fantasy Basketball Team Analyzer (in progress)",
+      imageSrc: ["/fantasybball.png"],
+      description: [
+        "- Developing an innovative web application for fantasy basketball enthusiasts, providing actionable insights on optimal player selections and matchup predictions.",
+        "- Integrating Yahoo's Fantasy Basketball API to access real-time data, ensuring users receive the most current information for strategizing their game plays.",
+        "- Implementing advanced machine learning algorithms to analyze player performance and game statistics, offering data-driven recommendations for enhanced gameplay strategies.",
+        "- Creating a user-centric platform that simplifies complex data, allowing users to make informed decisions about player picks and matchup outcomes.",
+      ],
+      // githubUrl:
+      //   "https://github.com/bk-gill/Flight-Reservation-Web-Application",
+    },
+
+    {
+      title: "Flight Web Management Application",
+      imageSrc: ["/fwma.png"],
+      description: [
+        "- Engineered a flight reservation web application to deepen expertise in Spring Boot, demonstrating proficiency in Java-based backend development.",
+        "- Implemented a responsive front-end using React, showcasing skills in modern web development technologies and user interface design.",
+        "- Focused on creating a user-friendly interface, enabling easy navigation and interaction for users seeking to reserve flights.",
+      ],
+      githubUrl:
+        "https://github.com/bk-gill/Flight-Reservation-Web-Application",
+    },
+
     {
       title: "Autonomous Plant Disease Detection Pathfinder",
       imageSrc: ["/pathfinder1.jpg", "/pathfinder2.jpg"],
@@ -50,6 +90,7 @@ export default function Home() {
         "- Initial designs were created using Sketch, features were implemented using Javascript.",
         "- Integrated with Git version control and deployed the website on Vercel for continuous deployment.",
       ],
+      githubUrl: "https://github.com/bk-gill/personal-website",
     },
     {
       title: "French Bulldog CT-Scan Apparatus",
@@ -59,14 +100,6 @@ export default function Home() {
         "- Purpose of the project was to create an apparatus that reduces visibility obstructions during CT-Scans for Brachycephalic dog breeds.",
         "- Extensive research into material selection as apparatus must be constructed without using any metals (and any other materials that interfere with CT-Scan imaging) while being able to withstand all relevant forces.",
         "- SolidWorks and ANSYS were utilized to create a fully-working model that met all constraints and criteria of the client.",
-      ],
-    },
-    {
-      title: "Current Project",
-      imageSrc: ["/p4.png"],
-      description: [
-        "- Currently working on an iOS application",
-        "- Stay tuned!",
       ],
     },
   ];
@@ -94,7 +127,7 @@ export default function Home() {
           </div>
           <div className={indexStyles.socialIconsContainer}>
             <a
-              href="https://www.linkedin.com/in/balkarn-gill-826881240/"
+              href="https://www.linkedin.com/in/balkarn-gill-826881240"
               target="_blank"
               rel="noopener noreferrer"
               className={indexStyles.socialIcon}
@@ -151,23 +184,75 @@ export default function Home() {
           </div>
         </div>
         <Timeline>
-          <Event year="2023" title="Systems Analyst" subtitle="Zedcor">
-            <p>Add a sentence here, okay!</p>
+          <Event
+            year="2023"
+            title="Backend Developer (internship)"
+            subtitle="CircleCVI"
+          >
+            <p>
+              - Driving backend improvements and database enhancements for
+              Circle CVI's medical imaging software, focusing on robust data
+              management and software reliability.
+            </p>
+            <p>
+              - Collaborating with software and front-end teams to integrate
+              user-centric features, employing Python and MySQL to optimize
+              testing infrastructure and user experience.
+            </p>
           </Event>
-          <Event year="" title="Full Stack Developer" subtitle="Neo Financial">
-            <p>Add a sentence here, okay!</p>
+          <Event year="" title="Systems Analyst (part-time)" subtitle="Zedcor">
+            <p>
+              - Significantly enhanced system reliability and efficiency,
+              notably by increasing it by approximately 5% in July 2023 through
+              strategic optimizations
+            </p>
+            <p>
+              - Programming sensors in PHP and MySQL for advanced security
+              monitoring.
+            </p>
+          </Event>
+          <Event
+            year=""
+            title="Full Stack Developer (contract)"
+            subtitle="Neo Financial"
+          >
+            <p>
+              - Spearheaded the development of Neo Financial's Tech Thursdays
+              web app using React and Drupal.
+            </p>
+            <p>
+              - Culminated in a successful transfer of ownership and earned a
+              letter of reccomendation from the company.
+            </p>
           </Event>
 
-          <Event year="2022" title="IT Consultant" subtitle="Carnostic Inc.">
-            <p>Add a sentence here, okay!</p>
+          <Event
+            year="2022"
+            title="IT Consultant (full-time)"
+            subtitle="ATF Logistics"
+          >
+            <p>
+              - Led the integration of new fleet management software,
+              customizing solutions to meet unique company needs and resolving
+              software errors while keeping staff updated on functionalities.
+            </p>
           </Event>
 
           <Event
             year="2021"
-            title="Software Development Intern"
+            title="Software Developer (Internship)"
             subtitle="Carnostic Inc."
           >
-            <p>Add a sentence here, okay!</p>
+            <p>
+              - Significantly contributed towards the end-to-end development of
+              both frontend and backend product features, from conceptualization
+              and research to implementation and maintenance.
+            </p>
+            <p>
+              - Enhanced user interface design using Sketch and Figma, and
+              implemented with Java, while collaboratively refining user
+              experiences based on customer data and feedback.
+            </p>
           </Event>
         </Timeline>
         <div id="projects" className={projectsStyles.projectPageTitle}>
