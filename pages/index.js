@@ -287,7 +287,7 @@ export default function Home() {
         </div>
         <div className={resumeStyles.resumeContainer}>
           <iframe
-            src="https://drive.google.com/file/d/1wrVNx7STUXvEZIzmZuNZbYS7vqRM9AA6/preview"
+            src="https://drive.google.com/file/d/1lgHq2Q6XC4hif1ZhcYI7mtYQTWSG-mvJ/preview"
             className={resumeStyles.resumeIframe}
           />
         </div>
