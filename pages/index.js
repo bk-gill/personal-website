@@ -49,6 +49,19 @@ export default function Home() {
     },
 
     {
+      title: "YYC MedMatch - YYCHacks 2024 Hackathon",
+      imageSrc: ["/yychacks.png", "/yychacks1.jpeg", "/yychacks2.jpeg"],
+      description: [
+        "-Designed and developed a multicultural healthcare connection app for newcomers in Calgary, enhancing accessibility to linguistically aligned healthcare providers.",
+        "-Utilized React and TypeScript for the front-end development, creating an intuitive and user-friendly interface that supports multiple languages.",
+        "-Implemented a robust backend system using Python and MongoDB, ensuring efficient data management and scalability to handle growing user numbers.",
+        "-Integrated advanced search functionalities, enabling users to find healthcare providers by language, specialty, and location, significantly improving the match precision.",
+        "-🏆 Won 4th place at the hackathon out of 150 contestants. 🏆",
+      ],
+      githubUrl: "https://github.com/yyc-hacks/calgary-accessibility",
+    },
+
+    {
       title: "Fantasy Basketball Team Analyzer (in progress)",
       imageSrc: ["/fantasybball.png"],
       description: [
@@ -287,7 +300,7 @@ export default function Home() {
         </div>
         <div className={resumeStyles.resumeContainer}>
           <iframe
-            src="https://drive.google.com/file/d/1lgHq2Q6XC4hif1ZhcYI7mtYQTWSG-mvJ/preview"
+            src="https://drive.google.com/file/d/1rlgp2b6rIiM4bxqql9QtWeZe7T93G6vd/preview"
             className={resumeStyles.resumeIframe}
           />
         </div>
