@@ -1,5 +1,5 @@
 .StarryContainer {
-  z-index: 0; /* Ensure it's below interactive elements */
+  z-index: 1; /* Ensure it's below interactive elements */
   position: fixed;
   top: 0;
   left: 0;
