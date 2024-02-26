@@ -11,8 +11,26 @@ import { Event } from "../components/Event";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Modal from "../components/Modal";
+import { VerticalLine } from "../components/VerticalLine";
+import { UnderLine } from "../components/UnderLine";
+import StarryBackground from "../components/StarryBackground";
+import StarryBackgroundStyles from "../styles/StarryBackground.module.css";
 
 export default function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [currentProject, setCurrentProject] = useState(null);
 
   const openModal = (project) => {
@@ -119,6 +137,9 @@ export default function Home() {
 
   return (
     <div>
+      <div className={StarryBackgroundStyles.StarryContainer}>
+        <StarryBackground scrollPosition={scrollPosition} />
+      </div>
       <Head>
         <title>Balkarn Gill</title>
         <link rel="icon" href="/favicon.ico" />
@@ -166,6 +187,27 @@ export default function Home() {
               <FaTwitter color="#1DA1F2" size={20} />
               <span>Twitter</span>
             </a>
+            <div
+              style={{
+                position: "absolute",
+                left: "50%",
+                transform: "translateX(-50%)",
+                height: "100%",
+                top: "200px",
+                right: "55px",
+              }}
+            >
+              {/* <VerticalLine height="80" /> */}
+            </div>
+            {/* <div
+              style={{
+                position: "absolute",
+                left: "-15px",
+                bottom: "-270px",
+              }}
+            >
+              <UnderLine size="150" color="#5918df" />
+            </div> */}
           </div>
         </div>
 

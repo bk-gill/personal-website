@@ -6,6 +6,19 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: black;
   color: white;
+  z-index: -1;
+}
+
+.section1 {
+  background: linear-gradient(#000000, #1c1c1c); /* Black to dark gray */
+}
+
+.section2 {
+  background: linear-gradient(#494949, #5918df); /* Dark gray to vivid purple */
+}
+
+.section3 {
+  background: linear-gradient(#5918df, white); /* Vivid purple to white */
 }
 
 a {

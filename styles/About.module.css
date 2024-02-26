@@ -1,6 +1,8 @@
 .aboutContainer {
   text-align: center;
   margin-top: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .aboutTitle {
@@ -8,6 +10,8 @@
   font-family: "Noto Sans", sans-serif;
   text-align: center;
   margin-top: 90px;
+  position: relative;
+  z-index: 2;
 }
 
 .textbox {
@@ -20,6 +24,9 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-family: "Noto Sans", sans-serif;
+  color: white; /* Ensures text is white */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Creates a thin black outline */
 }
 
 .aboutImage {

@@ -5,6 +5,8 @@
   font-family: "Noto Sans", sans-serif;
   font-size: 2rem;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .resumeContainer {
@@ -12,6 +14,8 @@
   margin: 0 auto;
   padding: 20px;
   max-width: 1200px;
+  position: relative;
+  z-index: 2;
 }
 
 .resumeIframe {
@@ -19,6 +23,8 @@
   width: 100%;
   height: 800px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {

@@ -8,6 +8,8 @@
   padding: 1em 0 2em 0;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 
 .timeline {
@@ -15,6 +17,7 @@
   max-width: 600px;
   list-style: none;
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .timeline:before {
@@ -25,6 +28,7 @@
   left: 50%;
   width: 2px;
   height: 100%;
+  z-index: 2;
 }
 
 .timeline::after {
@@ -36,11 +40,13 @@
   width: 80%;
   height: 2px;
   background-color: white;
+  z-index: 2;
 }
 
 .event {
   position: relative;
   padding-left: 0;
+  z-index: 2;
 }
 
 .event:nth-child(odd) {
@@ -96,12 +102,15 @@
   position: relative;
   width: auto;
   top: -125px;
+  z-index: 2;
 }
 
 .body h3 {
   color: #5918df;
   font-size: 1.2em;
   margin-bottom: 0px;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; Creates a thin black outline */
 }
 
 .body h4 {
@@ -121,6 +130,11 @@
   max-width: 180px;
   word-break: break-word;
   margin-bottom: -45px;
+  position: relative;
+  z-index: 2;
+  color: white; /* Ensures text is white */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Creates a thin black outline */
 }
 
 .description strong {
