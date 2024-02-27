@@ -137,9 +137,9 @@ export default function Home() {
 
   return (
     <div>
-      <div className={StarryBackgroundStyles.StarryContainer}>
+      {/* <div className={StarryBackgroundStyles.StarryContainer}>
         <StarryBackground scrollPosition={scrollPosition} />
-      </div>
+      </div> */}
       <Head>
         <title>Balkarn Gill</title>
         <link rel="icon" href="/favicon.ico" />
