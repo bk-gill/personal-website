@@ -43,6 +43,17 @@ export default function Home() {
 
   const projects = [
     {
+      title:
+        "iOS Application - Improving Nutrition for Medically Complex Children",
+      imageSrc: ["nutriline.png"],
+      description: [
+        "- Collaborated closely with Alberta Health Services nurses to develop an innovative iOS application aimed at enhancing nutrition for medically complex children.",
+        "- Utilized Swift and Firebase to create a user-friendly and accessible mobile application, implemented machine learning algorithms to personalize feeding plans and a chatbot that interacted with the database.",
+        "- Achieved 2nd place in a competitive hackathon event, underscoring the application's innovation, practical impact, and technical excellence.",
+        "- Currently contributing to the further development of the application, demonstrating commitment to project success and ongoing improvement.",
+      ],
+    },
+    {
       title: "CircleCVI Database Optimization Project",
       imageSrc: ["circlecvi.jpeg"],
       description: [
@@ -80,7 +91,7 @@ export default function Home() {
     },
 
     {
-      title: "Fantasy Basketball Team Analyzer (in progress)",
+      title: "Fantasy Basketball AI Team Analyzer (in progress)",
       imageSrc: ["/fantasybball.png"],
       description: [
         "- Developing an innovative web application for fantasy basketball enthusiasts, providing actionable insights on optimal player selections and matchup predictions.",
